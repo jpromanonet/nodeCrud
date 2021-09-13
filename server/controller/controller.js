@@ -58,11 +58,9 @@ exports.find = (req, res)=>{
                 res.status(500).send({ message : err.message || "Error Occurred while retriving user information" })
             })
     }
-
-    
 }
 
-// Update a new idetified user by user id
+// Update a new identified user by user id
 exports.update = (req, res)=>{
     if(!req.body){
         return res
